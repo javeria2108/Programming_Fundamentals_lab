@@ -1,0 +1,12 @@
+annual_salary=float(input("enter annual salary"))
+total_cost=float(input("enter total cost of dream home"))
+portion_down_payment=total_cost*(0.25)
+current_savings=0
+Additional_funds=(current_savings*0.04)/12
+monthly_salary=annual_salary/12
+portion_saved=float(input("enter percentage of portion of salary to be saved "))
+no_of_months=0
+while (current_savings<=portion_down_payment):
+    current_savings+=portion_saved*monthly_salary+Additional_funds
+    no_of_months+=1
+print("Number of months=",no_of_months)    
